@@ -32,6 +32,8 @@ jobs:
       - run:    ./gradlew  :test --tests "me.leon.NodeProcess.nodeNationGroup"
       - run:     ./gradlew  :test --tests "me.leon.NodeProcess.availableSpeedTest"
       - run:    ./gradlew  :test --tests "me.leon.NodeProcess.speedTestResultParse"
+      - name: submit
       - run: git config --global user.email "rexyuchina@gmail.com" &&git config --global user.name "github-actions"
+             git add .
       - run: chmod  777 ./up.sh && ./up.sh
 
