@@ -26,7 +26,7 @@ jobs:
       # Runs a single command using the runners shell
       - run: chmod  777 ./gradlew
       - name: execute gradle test
-        run: ./gradlew  :test --tests "me.leon.NodeProcess.crawl"
+        run: ./gradlew  :test --tests "me.leon.NodeProcess.localUse"
         
       - run:     ./gradlew  :test --tests "me.leon.NodeProcess.removeAd"
       - run:    ./gradlew  :test --tests "me.leon.NodeProcess.nodeNationGroup"
